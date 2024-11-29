@@ -6,21 +6,22 @@ namespace while2
     {
         static void Main(string[] args)
         {
-            int x = 0;
-            int y = 33;
-            while (x <= y)
+            int a= int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            double count = 0;
+            var result = a;
+            if (a < b)
+                Console.WriteLine("error!");
+            while (result>=b)
             {
-             if (x % 2 == 0)
-             {
-                Console.WriteLine(x);
-             }
-
-             x++;
+                result -= b;
+                count++;
             }
-            {
-                
-            }
-            
+          
+            Console.WriteLine(count);
         }
+        
+        
+        
     }
 }
